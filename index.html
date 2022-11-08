@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+    }
+    .container{
+        margin: 10px;
+
+    }
+    li{
+        margin: 10px;
+
+    }  
+    input{
+        width: 100px;
+        border-radius: 5px ;
+        border : 2px solid black ;
+        background-color: bisque;
+        color: rgb(148, 50, 50);
+        font-weight: bolder;
+        text-align:center;
+        
+    }
+    
+    li{
+        list-style: none;
+    }
+   
+    button{
+        padding: 5px ;
+        font-size: 15px;
+        font-weight: bold;
+        border: none;
+        border-radius: 10px;
+
+    }
+    .BMI_Guide{
+        width: 200px;
+        background-color: bisque;
+        padding: 20px;
+        border-radius: 20px;
+    }
+    .BMI_Guide  div{
+         margin: 10px;
+    }
+    .output{
+    margin: 20px;
+    font-size: 24px;
+    font-weight: bolder;
+    text-decoration: underline;
+
+
+    }
+    body{
+        background-image: linear-gradient(to right, bisque, yellow);
+    }
+</style>
+<body>
+    <h1>
+        Calculate Your BMI 
+    </h1>
+    <div class="container">
+        <li>Height in CM : <input type="text"></li>
+        <li>Weight in Kg : <input type="text"></li>
+        <button onclick="Calculate()">Calculate</button>
+    </div>
+    <div class="BMI_Guide">
+    <div class="guide">If Your BMI is less than 18.6 then it means you are <strong>Under Weight</strong></div>
+    <div class="guide">If Your BMI is More than 24.9 then it means you are <strong>Over Weight</strong></div>
+    <div class="guide">If Your BMI is between 18.6 - 24.9 then it means you are <strong>Normal</strong></div>
+    </div>
+    <div class="output">Output</div>
+    <div class="output">
+        
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
